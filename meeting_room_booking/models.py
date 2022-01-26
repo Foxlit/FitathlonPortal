@@ -1,5 +1,4 @@
 from django.db import models
-from datetime import datetime
 
 sales = 'SL'
 products = 'PD'
@@ -11,12 +10,11 @@ DEPARTMENTS = [
 
 
 class MeetingRoom(models.Model):
-    name = models.CharField(max_length=255)
+    name = models.CharField(max_length=100)
     capacity = models.IntegerField(default=1)
 
 
 class User(models.Model):
-
     full_name = models.CharField(max_length=255)
     email = models.EmailField(max_length=255)
     department = models.CharField(max_length=2, choices=DEPARTMENTS)
@@ -40,8 +38,3 @@ class Booking(models.Model):
 
     def get_duration(self):
         return (self.datetime_end - self.datetime_begin).total_seconds() // 60
-
-
-user_1 = User.objects.create(full_name="Иванов Иван Иванович", email='example@gmail.com', department='SL')
-room_1 = MeetingRoom.objects.create(name="Комната 1", capacity=5)
-booking_1 = Booking.objects.create(meeting_room=room_1, datetime_begin='2022-01-19 00:00', datetime_end='2022-01-19 00:01', user=user_1)

@@ -1,12 +1,8 @@
 from django.db import models
+import constants
 
-sales = 'SL'
-products = 'PD'
 
-DEPARTMENTS = [
-    (sales, 'Sales'),
-    (products, 'Products'),
-]
+DEPARTMENTS = constants.DEPARTMENTS
 
 
 class MeetingRoom(models.Model):

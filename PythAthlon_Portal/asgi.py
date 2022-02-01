@@ -1,5 +1,5 @@
 """
-ASGI config for Fitathlon_Portal project.
+ASGI config for PythAthlon_Portal project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Fitathlon_Portal.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'PythAthlon_Portal.settings')
 
 application = get_asgi_application()

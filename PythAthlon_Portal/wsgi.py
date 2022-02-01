@@ -1,5 +1,5 @@
 """
-WSGI config for Fitathlon_Portal project.
+WSGI config for PythAthlon_Portal project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Fitathlon_Portal.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'PythAthlon_Portal.settings')
 
 application = get_wsgi_application()

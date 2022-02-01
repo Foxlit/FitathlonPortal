@@ -57,7 +57,7 @@ MIDDLEWARE = [
     'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware'
 ]
 
-ROOT_URLCONF = 'PythAthlon_Portal.urls'
+ROOT_URLCONF = 'urls'
 
 TEMPLATES = [
     {
@@ -75,7 +75,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'PythAthlon_Portal.wsgi.application'
+# WSGI_APPLICATION = 'PythAthlon_Portal.wsgi.application'
 
 
 # Database
@@ -135,3 +135,7 @@ SITE_ID = 1
 PROJECT_ROOT = os.path.normpath(os.path.dirname(__file__))
 STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
 STATIC_URL = '/static/'
+
+# TEMPLATE_DIRS = (
+#     os.path.join(PROJECT_ROOT, 'templates'),
+# )

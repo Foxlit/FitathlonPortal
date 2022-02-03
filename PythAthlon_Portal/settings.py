@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'meeting_room_booking',
+    'tg_bot',
     'django.contrib.sites',
     'django.contrib.flatpages',
     'django.contrib.staticfiles',
